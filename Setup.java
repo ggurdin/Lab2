@@ -1,6 +1,7 @@
 import bridges.connect.Bridges;
 import bridges.base.Array;
 import bridges.base.Element;
+import bridges.base.ElementVisualizer;
 
 public class Setup {
 	public static void main(String[] args) throws Exception {
@@ -22,11 +23,10 @@ public class Setup {
 	    
 	    for (int i = 0; i < arr.getSize(); i++) {
 	    	arr.getElement(i).setLabel(String.valueOf(i * i));
+	    	ElementVisualizer vis = new ElementVisualizer();
+	    	arr.getElement(i).setVisualizer(vis);
+	    	vis.setColor("purple");
 	    }
-	    
-	    arr.getElement(0).setValue (0);
-	    /* set the value as a Label */
-	    arr.getElement(0).setLabel(String.valueOf(0));
 	    
 	    /* Tell BRIDGES which data structure to visualize */
 	    bridges.setDataStructure(arr);
