@@ -1,3 +1,5 @@
+Lab Assignment - create an Eclipse project to connect to a remote API.
+
 The purpose of this assignment is to:
 
 Create an account on the BRIDGES server.
